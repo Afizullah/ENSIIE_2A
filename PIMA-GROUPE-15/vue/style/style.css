@@ -1,0 +1,198 @@
+body
+{
+	background-color: black;
+	color: white;
+	font-family:"Trebuchet MS", Verdana, Consolas, sans-serif;
+}
+#elementsCentraux
+{
+	display: flex;
+	flex-direction: row;
+}
+header
+{
+	text-align: center;
+	color: white;
+	width: 90%;
+	margin-bottom: 10px;
+	border-bottom: white solid 1px;
+	/* centrer le bloc de largeur 80% */
+	margin-left: 5%;
+}
+
+header h1
+{
+	margin: 5px;
+}
+
+nav, aside
+{
+	background-color: rgb(50,50,50);
+	color: white;
+	width: 20%;
+	text-align: left;
+	overflow:auto;
+}
+
+nav h1, aside h1
+{
+	background-color: rgb(57,113,158);
+	display: flex;
+	padding: 5px;
+	margin: 0px;	
+}
+
+a
+{
+	color: white;
+	text-decoration: none;
+	transition-duration: 0.2s;
+}
+
+a:hover
+{
+	font-size: 1.2em;
+	text-shadow: 2px 2px 3px;
+	transition-duration: 0.2s;
+}
+
+#bandeauVote
+{
+	display: none;
+	justify-content: space-between;
+	margin-top: 10px;
+	border-top: white solid 1px;
+	text-align: right;
+	padding: 10px;
+	width: 90%;
+	margin-left:5%;
+}
+
+#dislikeLink
+{
+	color: rgb(255,50,50);
+}
+
+#likeLink
+{
+	color: rgb(50,255,50);
+}
+
+
+#imageSection, #imagesSection
+{
+	display: flex;
+	flex: 1;
+	flex-wrap: wrap;
+	background-color: rgb(50,50,50);
+	text-align: center;
+	width: 60%;
+	min-width: 300px;
+	margin-left: 10px;
+	margin-right: 10px;
+	overflow:auto;
+}
+
+#motsClesSection {
+	display: flex;
+	flex: 1;
+	flex-wrap: wrap;
+	background-color: rgb(50,50,50);
+	text-align: center;
+	width: 60%;
+	min-width: 300px;
+	margin-left: 10px;
+	margin-right: 10px;
+	overflow:auto;
+	padding: 10px;
+}
+
+.apodPicture
+{
+	width: 100%;
+}
+
+figcaption
+{
+	font-style: italic;
+	color: white;
+}
+
+footer
+{
+	color: white;
+	text-align: center;
+	font-style: italic;
+	font-size: 0.8em;
+	
+	width: 90%;
+	margin-top: 10px;
+	border-top: white solid 1px;
+	/* centrer le bloc de largeur 80% */
+	margin-left: 5%;
+}
+
+li
+{
+	/*Espacer les puces*/
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+figure
+{
+	position: relative; /* permet d'obtenir l'héritage sur le positionnement */
+	text-align: center;
+}
+#score
+{
+	/*Lorsque l'utilisateur à voté on doit avoir "display: block;" à la place de "display:none;"*/
+	display: none;
+	overflow:auto;
+	text-align: center;
+	position: absolute;
+	top: 0%;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	background-color: rgba(0,0,0,0.8);
+	margin: 0px;
+
+}
+
+
+.smallPicture img
+{
+	width: 100%;
+	border: solid grey medium;
+}
+
+.smallPicture
+{
+	width: 20%;
+	padding: 5%;
+	margin: auto;
+}
+
+.smallPicture img:hover
+{
+	transform: scale(1.3, 1.3);
+	box-shadow: -5px -5px 20px white;
+	transition-duration: 0.6s;
+}
+.motCle
+{
+margin: 20px;
+background-color: rgba(57,113,158,0.5);
+font-size: large;
+border-radius: 20px;
+display:inline;
+}
+
+.motCle:hover
+{
+	font-size:x-large;
+	background-color: rgba(57,113,158,1);
+	transition-duration: 0.2s;
+}
+

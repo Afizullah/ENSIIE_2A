@@ -1,0 +1,11 @@
+<?php
+//chemin 
+define("PATH_VUE","../vue/");
+define("PATH_CONTROLEUR","../controleur/");
+define("PATH_MODEL","../model/");
+define("PATH_COMMUN","../commun/");
+define("PATH_CONFIG","../config/");
+//page
+define("DEFAULT_PAGE","accueil");
+define("LOGIN_PAGE","login");
+?>
